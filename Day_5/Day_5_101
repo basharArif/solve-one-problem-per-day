@@ -1,0 +1,12 @@
+# Game Time
+# bee-crowd | 1046
+
+start, end = map(int, input().split())
+if start > 12:
+    val = 24 - start + end
+    print(f'O JOGO DUROU {val} HORA(S)')
+elif start < 12 and start != 0:
+    val2 = end - start
+    print(f'O JOGO DUROU {val2} HORA(S)')
+elif start == 0 and end == 0:
+    print('O JOGO DUROU 24 HORA(S)')
